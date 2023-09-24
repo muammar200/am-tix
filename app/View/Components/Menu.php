@@ -34,19 +34,19 @@ class Menu extends Component
     public function lists(){
         return [
             [
-                'label' => 'Dashboard'
+                "label" => "Dashboard"
             ],
             [
-                'label' => 'Movies'
+                "label" => "Movies"
             ],
             [
-                'label' => 'Theaters'
+                "label" => "Theaters"
             ],
             [
-                'label' => 'Tickets'
+                "label" => "Tickets"
             ],
             [
-                'label' => 'Users'
+                "label" => "Users"
             ],
         ];
     }
