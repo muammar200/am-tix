@@ -2,7 +2,7 @@
     {{-- <ul class="nav flex-column bg-dark"> --}}
         @foreach ($lists as $list)
             {{-- <li class="nav-item"> --}}
-                <a class="nav-link @if($list['label'] == $active) active @endif" href="">
+                <a class="nav-link {{ $isActive($list['label']) ? 'active' : '' }}" href="">
                     {{-- {{ $menu[0]['label'] }} --}}
                     {{ $list['label'] }}
                     {{-- {{ $menu[1]['label'] }} --}}
