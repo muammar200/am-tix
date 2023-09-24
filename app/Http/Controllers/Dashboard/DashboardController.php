@@ -12,7 +12,10 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        //
+        $active = "ini aktif";
+        return view('home', [
+            'active' => $active,
+        ]);
     }
 
     /**
