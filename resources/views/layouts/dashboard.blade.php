@@ -15,6 +15,7 @@
     <link rel="icon" href="{{ asset('img/icon.png') }}" sizes="32x32" type="image/png">
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
 </head>
 <body>
     <div id="app">
@@ -72,14 +73,14 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-2">
                         <x-menu :active="$active" />
                         {{-- {{ $active }} --}}
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-10 main-content">
                         @yield('content')
                     </div>
                 </div>
